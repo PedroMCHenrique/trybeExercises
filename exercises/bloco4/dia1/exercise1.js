@@ -91,7 +91,8 @@ switch(chessPiece) {
     case 'pawn':
         console.log('move vertically forward one square, with the option to move two squares if they have not yet moved.');
         break;
-    default;
+
+    default:
     console.log('peça errada');
 }
 
@@ -135,4 +136,6 @@ let notaPorcentagem = 51
     } else {
         console.log('false');
     }
+
+    
 
