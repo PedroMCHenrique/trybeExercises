@@ -42,10 +42,23 @@ if (e > f && e > g){
 //Faça um programa que, dado um valor definido numa variável, retorne "positive" se esse valor for positivo, "negative" se for negativo e "zero" caso contrário.
 
 let h = 0;
+
 if (h > 0){
     console.log('positive');
 } else if (h < 0) {
     console.log('negative');
 } else {
     console.log('zero');
+}
+
+//Faça um programa que defina três variáveis com os valores dos três ângulos internos de um triângulo. Retorne true se os ângulos representarem os ângulos de um triângulo e false caso contrário.
+
+let angleOne = 40;
+let angleTwo = 80;
+let angleThree= 60;
+
+if (angleOne + angleTwo + angleThree == 180) {
+    console.log('true');
+} else {
+    console.log('false');
 }
