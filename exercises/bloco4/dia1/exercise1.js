@@ -16,11 +16,25 @@ console.log('O módulo é ' +(a % b));
 
 //Faça um programa que retorne o maior de dois números. Defina no começo do programa duas variáveis com os valores que serão comparados.
 
-let c = 21
-let d = 25
+let c = 21;
+let d = 25;
 
 if (c > d){
     console.log(c + ' é maior que '+ d);
 } else {
-    console.log(d + ' é maior que ' + c)
+    console.log(d + ' é maior que ' + c);
+}
+
+//Faça um programa que retorne o maior de três números. Defina no começo do programa três variáveis com os valores que serão comparados.
+
+let e = 25;
+let f = 10;
+let g = 15;
+
+if (e > f && e > g){
+    console.log('O maior número é '+ e);
+} else if (f > e && f > g) {
+    console.log('O maior número é '+ f);
+} else {
+    console.log('O maior número é '+ g);
 }
