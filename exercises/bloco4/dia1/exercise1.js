@@ -62,3 +62,28 @@ if (angleOne + angleTwo + angleThree == 180) {
 } else {
     console.log('false');
 }
+
+//Escreva um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.
+
+let chessPiece = 'pawn';
+
+switch(chessPiece) {
+    case 'king':
+        console.log('move one square in any direction, so long as that square is not attacked by an enemy piece.');
+        break;
+
+    case 'queen':
+        console.log('move diagonally, horizontally, or vertically any number of squares. any direction');
+    
+    case 'rooks':
+        console.log('horizontally or vertically any number of squares.');
+
+    case 'bishop':
+        console.log('move diagonally any number of squares.');
+
+    case 'knight':
+        console.log('move in an ‘L’ shape’: two squares in a horizontal or vertical direction, then move one square horizontally or vertically.');
+
+    case 'pawn':
+        console.log('move vertically forward one square, with the option to move two squares if they have not yet moved.');
+}
