@@ -74,16 +74,65 @@ switch(chessPiece) {
 
     case 'queen':
         console.log('move diagonally, horizontally, or vertically any number of squares. any direction');
+        break;
     
     case 'rooks':
         console.log('horizontally or vertically any number of squares.');
+        break;
 
     case 'bishop':
         console.log('move diagonally any number of squares.');
+        break;
 
     case 'knight':
         console.log('move in an ‘L’ shape’: two squares in a horizontal or vertical direction, then move one square horizontally or vertically.');
+        break;
 
     case 'pawn':
         console.log('move vertically forward one square, with the option to move two squares if they have not yet moved.');
+        break;
+    default;
+    console.log('peça errada');
 }
+
+//Escreva um programa que converte uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F. Siga essas regras:
+
+let notaPorcentagem = 51
+
+    if (notaPorcentagem < 0 || notaPorcentagem > 100){
+        console.log('Nota inválida');
+    }else if(notaPorcentagem >= 90){
+        console.log('A');
+    } else if(notaPorcentagem >= 80){
+        console.log('B');    
+    } else if(notaPorcentagem >= 70){
+        console.log('C');
+    } else if(notaPorcentagem >= 60){
+        console.log('D');
+    } else if(notaPorcentagem >= 50){
+        console.log('E');
+    } else {
+        console.log('F');
+    }
+
+    //Escreva um programa que defina três números em variáveis no seu começo e retorne true se pelo menos uma das três for par. Caso contrário, ele deve retornar false.
+
+    let i = 2;
+    let j = 2;
+    let k = 10;
+
+    if(i % 2 == 0 || j % 2 == 0 || k % 2 == 0){
+        console.log('true');
+    } else {
+        console.log('false');
+    }
+
+ //Escreva um programa que defina três números em variáveis no seu começo e retorne true se pelo menos uma das três for ímpar. Caso contrário, ele retorna false .
+
+ 
+    if(i % 2 == 1 || j % 2 == 1 || k % 2 == 1){
+        console.log('true');
+    } else {
+        console.log('false');
+    }
+
