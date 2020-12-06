@@ -63,6 +63,7 @@
     let body = document.querySelector('body');
     let h1Tittle = document.createElement('h1');
     h1Tittle.innerText = 'texto Exercício 5.2 - JavaScript DOM'
+    h1Tittle.className = 'title';
     body.appendChild(h1Tittle);
 
 //2. Adicione a tag div com a classe main-content como filho da tag body;
@@ -104,18 +105,21 @@
     divLeftContent.appendChild(img);
 
 //8. Adicione uma lista não ordenada com os valores de 1 a 10 por extenso como valores da lista. Essa lista deve ser filha do div criado no passo 6;
+
     let ul = document.createElement('ul');
     ul.className = 'valores';
     divRightContent.appendChild(ul);
-    for(let index = 1; index < 11; index += 1) {
+    for(let index = 1; index <= 10; index += 1) {
     let li = document.createElement('li');
-        li.innerText = index
+        li.innerText = index;
         ul.appendChild(li);
     }
 
-
-
-//9. Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2.
+// 9. Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2.
+    for(let index = 0; index <= 2; index += 1) {
+    let h3 = document.createElement('h3');
+    divBody.appendChild(h3);
+    }
 
     </script>
   </body>
