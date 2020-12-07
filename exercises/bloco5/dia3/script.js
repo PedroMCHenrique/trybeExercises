@@ -47,11 +47,38 @@ calendarDays();
 // Implemente uma função que receba como parâmetro a string "Feriados" e crie dinamicamente um botão com o nome "Feriados".
 // Adicione a este botão a ID "btn-holiday" .
 // Adicione este botão como filho/filha da tag <div> com classe "buttons-container" .
-let feriados = 'feriados';
 function buttonHoliday(param1) {
   let buttonFeriados = document.createElement('button');
   let buttonsContainer = document.querySelector('.buttons-container');
-  buttonFeriados.innerText = 'Feriados';
+  buttonFeriados.innerText = param1;
+  buttonFeriados.id = 'btn-holiday';
   buttonsContainer.appendChild(buttonFeriados);
 }
-buttonHoliday(feriados);
+buttonHoliday('feriados');
+
+// Exercício 3:
+// Implemente uma função que adicione ao botão "Feriados" um evento de "click" que muda a cor de fundo dos dias que possuem a classe "holiday" .
+// É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à configuração inicial com a cor "rgb(238,238,238)" .
+
+function clickBg() {
+  let getHoliday = document.querySelectorAll('.holiday');
+  for(let index = 0; index < getHoliday.length; index += 1){
+
+    if(getHoliday[index].style.backgroundColor === 'red') {
+      getHoliday[index].style.backgroundColor = 'rgb(238,238,238)';
+    } else {
+    getHoliday[index].style.backgroundColor = 'red';
+    }
+  }
+}
+
+function bgButtonHoliday() {
+let btnFeriados = document.querySelector('#btn-holiday');
+btnFeriados.addEventListener('click', clickBg)
+}
+bgButtonHoliday();
+
+// Exercício 4:
+// Implemente uma função que receba como parâmetro a string "Sexta-feira" e crie dinamicamente um botão com o nome "Sexta-feira".
+// Adicione a este botão o ID "btn-friday" .
+// Adicione este botão como filho/filha da tag <div> com classe "buttons-container" .
