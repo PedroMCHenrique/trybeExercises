@@ -20,3 +20,38 @@ function createDaysOfTheWeek() {
 // Os dias devem estar contidos em uma tag <li> , e todos devem ter a classe day . Ex: <li class="day">3</li>
 // Os dias 24, 25 e 31 são feriados e, além da classe day , devem conter também a classe holiday . Ex: <li class="day holiday">24</li>
 // Os dias 4, 11, 18 e 25 são Sexta-feira. Eles devem conter a classe day e a classe friday . Ex: <li class="day friday">4</li>
+
+
+
+function calendarDays() {
+  const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
+  const idDays = document.querySelector('#days')
+  for(let index = 0; index < dezDaysList.length; index += 1) {
+    let daysList = document.createElement('li');
+    daysList.innerText = dezDaysList[index];
+    daysList.className = 'day';
+    idDays.appendChild(daysList);
+
+    if(dezDaysList[index] === 24 || dezDaysList[index] === 25 || dezDaysList[index] === 31){
+      daysList.className = 'day holiday';
+    }
+
+    else if(dezDaysList[index] === 4 || dezDaysList[index] === 11 || dezDaysList[index] === 18 || dezDaysList[index === 25]) {
+      daysList.className = 'day friday';
+    }
+  }
+}
+calendarDays();
+
+// Exercício 2:
+// Implemente uma função que receba como parâmetro a string "Feriados" e crie dinamicamente um botão com o nome "Feriados".
+// Adicione a este botão a ID "btn-holiday" .
+// Adicione este botão como filho/filha da tag <div> com classe "buttons-container" .
+let feriados = 'feriados';
+function buttonHoliday(param1) {
+  let buttonFeriados = document.createElement('button');
+  let buttonsContainer = document.querySelector('.buttons-container');
+  buttonFeriados.innerText = 'Feriados';
+  buttonsContainer.appendChild(buttonFeriados);
+}
+buttonHoliday(feriados);
