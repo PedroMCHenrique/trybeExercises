@@ -39,6 +39,9 @@ function calendarDays() {
     else if(dezDaysList[index] === 4 || dezDaysList[index] === 11 || dezDaysList[index] === 18 || dezDaysList[index === 25]) {
       daysList.className = 'day friday';
     }
+    if (dezDaysList[index] === 25){
+      daysList.className = 'day friday holiday';
+    }
   }
 }
 calendarDays();
@@ -91,3 +94,26 @@ function buttonFriday(para1) {
   btnContainer.appendChild(btnFriday);
 }
 buttonFriday('Sexta-Feira');
+
+// Exercício 5:
+// Implemente uma função que adicione ao botão "Sexta-feira" um evento de "click" que modifica o texto exibido nos dias que são Sexta-feira.
+// É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à configuração inicial exibindo os dias.
+
+function fridayEventBtn(){
+  let btnSextaFeira = document.querySelector('#btn-friday');
+  btnSextaFeira.addEventListener('click', txtButtonFriday);
+}
+
+function txtButtonFriday() {
+let fridayClass = document.querySelectorAll('.friday');
+const arrayFriday = [4, 11, 18, 25];
+  for(let index = 0; index < fridayClass.length; index += 1) {
+
+    if(fridayClass[index].innerText === 'Sextou') {
+      fridayClass[index].innerText = arrayFriday[index];
+    } else {
+      fridayClass[index].innerText = 'Sextou';
+    }
+  }
+}
+fridayEventBtn();
