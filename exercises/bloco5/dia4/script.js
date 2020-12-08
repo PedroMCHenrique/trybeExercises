@@ -10,10 +10,10 @@
 
 function bgColorChange() {
     let body = document.querySelector('body');
-    if (body.style.backgroundColor === 'rgb(169, 169, 169)') {
+    if (body.style.backgroundColor === 'rgb(47, 79, 79)') {
     body.style.backgroundColor = 'rgb(255, 250, 250)';
     } else {
-        body.style.backgroundColor = 'rgb(169, 169, 169)';
+        body.style.backgroundColor = 'rgb(47, 79, 79)';
     }
     console.log('bgColorChange');
 }

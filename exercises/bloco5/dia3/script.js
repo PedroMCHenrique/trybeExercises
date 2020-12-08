@@ -67,10 +67,10 @@ function clickBg() {
   let getHoliday = document.querySelectorAll('.holiday');
   for(let index = 0; index < getHoliday.length; index += 1){
 
-    if(getHoliday[index].style.backgroundColor === 'red') {
+    if(getHoliday[index].style.backgroundColor === 'yellow') {
       getHoliday[index].style.backgroundColor = 'rgb(238,238,238)';
     } else {
-    getHoliday[index].style.backgroundColor = 'red';
+    getHoliday[index].style.backgroundColor = 'yellow';
     }
   }
 }
