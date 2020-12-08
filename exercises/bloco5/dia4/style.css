@@ -1,0 +1,42 @@
+header {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 2px;
+    font-size: 70px;
+}
+
+h2 {
+    margin-top: 2px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+section {
+    width: 50%;
+    margin: auto;
+    border-top: 5px solid;
+    border-bottom: 5px solid;
+    border-top-style: ridge;
+    border-bottom-style: ridge;
+}
+
+p {
+    text-align: justify;
+    margin: 40px;
+}
+
+menu {
+    list-style-type: none;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 0;
+}
+
+.setting {
+    margin: 10px;
+    font-size:18px;
+    display:inline-block;
+}
